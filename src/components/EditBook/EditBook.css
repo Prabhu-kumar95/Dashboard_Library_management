@@ -1,0 +1,93 @@
+.Bookpage {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+.BookPage .book {
+  display: flex;
+  width: 98vw;
+  height: 300px;
+}
+.BookPage .book .left {
+  width: 375px;
+  object-fit: contain;
+  text-align: center;
+}
+.BookPage .book .left:hover img {
+  filter: drop-shadow(0 0 5px #fff);
+}
+.BookPage .book .left img {
+  height: 100%;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.BookPage .book .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.BookPage .book .right h2 {
+  font-size: 24px;
+}
+.BookPage button {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.deleteButton {
+  background-color: #1e1e1e;
+}
+.backBtn {
+  background-color: gray;
+}
+.editButton {
+  background-color: #006fff;
+}
+.deleteButton:hover {
+  box-shadow: 0 0 6px #1e1e1e;
+  scale: 1.1;
+}
+.editButton:hover {
+  box-shadow: 0 0 6px #006fff;
+  scale: 1.1;
+}
+.backBtn:hover {
+  box-shadow: 0 0 6px #fff;
+  scale: 1.1;
+}
+@media (max-width: 992px) {
+  .BookPage .book {
+    gap: 10px;
+  }
+  .BookPage p {
+    font-size: 1.25rem;
+  }
+  .BookPage .book .left {
+    width: auto;
+  }
+  .BookPage .book .right {
+    justify-content: start;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .BookPage .book .right {
+    gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .left {
+    height: 300px;
+  }
+  .BookPage .book {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

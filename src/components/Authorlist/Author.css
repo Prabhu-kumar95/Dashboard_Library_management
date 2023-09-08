@@ -1,0 +1,76 @@
+.Author {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #ffffff53;
+  padding: 16px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  flex-grow: 1;
+}
+.authorlist {
+  color: #fff;
+  height: 200px;
+  
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #0000003e;
+  transition: 0.3s;
+  position: relative;
+}
+
+.Author .authorlist:hover {
+  box-shadow: 0 0 10px #fff;
+}
+.authorcard {
+  height:350px;
+ 
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.Author .authorlist a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .Author {
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+@media (max-width: 768px) {
+  .Author {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .Author {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .authorcard {
+    justify-content: space-evenly;
+  }
+}
+.authorname{
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}
+.dateofbirth{
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}
+.shortbio{
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}

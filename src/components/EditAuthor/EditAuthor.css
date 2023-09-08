@@ -1,0 +1,104 @@
+.AuthorPage {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  .AuthorPage .authorlist {
+    display: flex;
+    width: 98vw;
+    height: 300px;
+  }
+  .AuthorPage .authorlist .left {
+    width: 375px;
+    object-fit: contain;
+    text-align: center;
+  }
+  
+  .AuthorPage .authorlist .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .AuthorPage .authorlist .right h2 {
+    font-size: 24px;
+  }
+  .AuthorPage button {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .deleteButton {
+    background-color: #1e1e1e;
+  }
+  .backBtn {
+    background-color: gray;
+  }
+  .editButton {
+    background-color: #006fff;
+  }
+  .deleteButton:hover {
+    box-shadow: 0 0 6px #1e1e1e;
+    scale: 1.1;
+  }
+  .editButton:hover {
+    box-shadow: 0 0 6px #006fff;
+    scale: 1.1;
+  }
+  .backBtn:hover {
+    box-shadow: 0 0 6px #fff;
+    scale: 1.1;
+  }
+  .authorname1{
+    font-size:xx-large;
+    
+  }
+  .dateofbirth1{
+    font-size:large;
+    
+  }
+  .shortbio1{
+    font-size:large;
+    
+  }
+  @media (max-width: 992px) {
+    .AuthorPage .author {
+      gap: 10px;
+    }
+    .AuthorPage p {
+      font-size: 1.25rem;
+    }
+    .AuthorPage .author .left {
+      width: auto;
+    }
+    .AuthorPage .author .right {
+      justify-content: start;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .AuthorPage .author .right {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 600px) {
+    .left {
+      height: 300px;
+    }
+    .AuthorPage .authorlist {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .newBookForm{
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  

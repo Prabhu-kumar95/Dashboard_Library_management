@@ -1,0 +1,104 @@
+.Home {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #ffffff53;
+  padding: 16px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  flex-grow: 1;
+}
+.book {
+  color: #fff;
+  height: 150px;
+  
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #0000003e;
+  transition: 0.3s;
+  position: relative;
+}
+
+.Home .book:hover {
+  box-shadow: 0 0 10px #fff;
+}
+.card {
+  height:350px;
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.Home .book a {
+  text-decoration: none;
+  color: #fff;
+}
+.book h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}
+.date {
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}
+
+
+.book:hover .card .image {
+  filter: drop-shadow(0 0 5px #000);
+}
+.book .btnSave {
+  background-color: rgba(0, 0, 0, 0.371);
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.book .btnSave.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+.book .btnSave:hover {
+  letter-spacing: 1px;
+  padding: 15px;
+  background: rgb(2, 47, 108);
+}
+@media (max-width: 992px) {
+  .Home {
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .book .btnSave {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .Home {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .Home {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    justify-content: space-evenly;
+  }
+}
+.isbn{
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}
+.author{
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000;
+}
